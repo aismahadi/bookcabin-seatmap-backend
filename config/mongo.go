@@ -6,12 +6,14 @@ import (
 	"log"
 	"time"
 
+	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
 var MongoClient *mongo.Client
 var SeatMapCollection *mongo.Collection
+var PassengerCollection *mongo.Collection
 
 func ConnectMongo() {
 	username := "mongo"
@@ -35,7 +37,46 @@ func ConnectMongo() {
 		log.Fatal("MongoDB ping failed:", err)
 	}
 
+	db := client.Database(dbName)
+
+	// 🔍 List current collections
+	collections, err := db.ListCollectionNames(ctx, bson.M{})
+	if err != nil {
+		log.Fatal("Failed to list collections:", err)
+	}
+
+	// Create "seatmaps" collection if not exists
+	if !contains(collections, "seatmaps") {
+		err := db.CreateCollection(ctx, "seatmaps")
+		if err != nil {
+			log.Fatal("Failed to create 'seatmaps' collection:", err)
+		}
+		log.Println("Created 'seatmaps' collection")
+	}
+
+	// Create "passengers" collection if not exists
+	if !contains(collections, "passengers") {
+		err := db.CreateCollection(ctx, "passengers")
+		if err != nil {
+			log.Fatal("Failed to create 'passengers' collection:", err)
+		}
+		log.Println("Created 'passengers' collection")
+	}
+
+	// Assign global collections
 	MongoClient = client
-	SeatMapCollection = client.Database(dbName).Collection("seatmaps")
+	SeatMapCollection = db.Collection("seatmaps")
+	PassengerCollection = db.Collection("passengers")
+
 	log.Println("Connected to MongoDB with auth")
+}
+
+// Helper function
+func contains(list []string, target string) bool {
+	for _, item := range list {
+		if item == target {
+			return true
+		}
+	}
+	return false
 }

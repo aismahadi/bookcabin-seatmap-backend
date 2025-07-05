@@ -9287,7 +9287,7 @@
 							},
 							"passenger": {
 								"passengerIndex": 1,
-								"passengerNameNumber": "01.01",
+								"passengerNumber": "01.01",
 								"passengerDetails": {
 									"firstName": "Rutwik",
 									"lastName": "Sabre"

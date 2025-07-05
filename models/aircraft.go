@@ -1,6 +1,7 @@
 package models
 
 type Aircraft struct {
+	ID       string  `bson:"_id" json:"id"`
 	Aircraft string  `json:"aircraft" bson:"aircraft"`
 	Cabins   []Cabin `json:"cabins" bson:"cabins"`
 }
