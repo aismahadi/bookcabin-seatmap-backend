@@ -5,6 +5,6 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func RegisterSeatRoutes(r *gin.Engine) {
-	r.GET("/api/seatmap", controllers.GetSeatMap)
+func RegisterSegmentRoutes(r *gin.Engine) {
+	r.GET("/api/segment", controllers.GetSegment)
 }

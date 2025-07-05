@@ -2345,12 +2345,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -2402,12 +2402,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -2459,12 +2459,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -2527,12 +2527,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -2584,12 +2584,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -2641,12 +2641,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -3914,12 +3914,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -3968,12 +3968,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -4022,12 +4022,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -4084,12 +4084,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -4138,12 +4138,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -4192,12 +4192,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -4278,12 +4278,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -4332,12 +4332,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -4386,12 +4386,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -4448,12 +4448,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -4502,12 +4502,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -4556,12 +4556,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -4642,12 +4642,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -4696,12 +4696,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -4750,12 +4750,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -4812,12 +4812,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -4866,12 +4866,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -4920,12 +4920,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -5010,12 +5010,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -5067,12 +5067,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -5124,12 +5124,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -5192,12 +5192,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -5249,12 +5249,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]
@@ -5306,12 +5306,12 @@
 														],
 														"limitations": [],
 														"refundIndicator": "R",
-														"freeOfCharge": false,
+														"freeOfCharge": true,
 														"prices": {
 															"alternatives": [
 																[
 																	{
-																		"amount": 30.0,
+																		"amount": 0.0,
 																		"currency": "MYR"
 																	}
 																]

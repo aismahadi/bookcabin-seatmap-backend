@@ -13,16 +13,16 @@ import (
 func main() {
 	config.ConnectMongo()
 
-	aircraft, err := utils.LoadSeatMap("SeatMapResponse.json")
+	segment, err := utils.LoadSegment("SeatMapResponse.json")
 	if err != nil {
 		log.Fatal(err)
 	}
-	config.SeatMapCollection.DeleteMany(context.TODO(), map[string]interface{}{})
-	_, err = config.SeatMapCollection.InsertOne(context.TODO(), aircraft)
+	config.SegmentCollection.DeleteMany(context.TODO(), map[string]interface{}{})
+	_, err = config.SegmentCollection.InsertOne(context.TODO(), segment)
 	if err != nil {
 		log.Fatal(err)
 	}
-	log.Println("SeatMap seeded into MongoDB")
+	log.Println("Segment seeded into MongoDB")
 
 	passanger, err := utils.LoadPassenger("SeatMapResponse.json")
 	if err != nil {
@@ -35,9 +35,21 @@ func main() {
 	}
 	log.Println("Passanger seeded into MongoDB")
 
+	aircraft, err := utils.LoadSeatMap("SeatMapResponse.json")
+	if err != nil {
+		log.Fatal(err)
+	}
+	config.SeatMapCollection.DeleteMany(context.TODO(), map[string]interface{}{})
+	_, err = config.SeatMapCollection.InsertOne(context.TODO(), aircraft)
+	if err != nil {
+		log.Fatal(err)
+	}
+	log.Println("SeatMap seeded into MongoDB")
+
 	r := gin.Default()
 	r.Use(cors.Default())
-	routes.RegisterSeatRoutes(r)
+	routes.RegisterSegmentRoutes(r)
+	routes.RegisterSeatMapRoutes(r)
 	routes.RegisterPassengerRoutes(r)
 	r.Run(":8080")
 }

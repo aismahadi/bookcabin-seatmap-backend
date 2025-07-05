@@ -14,6 +14,7 @@ import (
 var MongoClient *mongo.Client
 var SeatMapCollection *mongo.Collection
 var PassengerCollection *mongo.Collection
+var SegmentCollection *mongo.Collection
 
 func ConnectMongo() {
 	username := "mongo"
@@ -63,10 +64,20 @@ func ConnectMongo() {
 		log.Println("Created 'passengers' collection")
 	}
 
+	// Create "segments" collection if not exists
+	if !contains(collections, "segments") {
+		err := db.CreateCollection(ctx, "segments")
+		if err != nil {
+			log.Fatal("Failed to create 'segments' collection:", err)
+		}
+		log.Println("Created 'segments' collection")
+	}
+
 	// Assign global collections
 	MongoClient = client
 	SeatMapCollection = db.Collection("seatmaps")
 	PassengerCollection = db.Collection("passengers")
+	SegmentCollection = db.Collection("segments")
 
 	log.Println("Connected to MongoDB with auth")
 }
