@@ -6,76 +6,19 @@ import (
 	"os"
 )
 
-func LoadSegment(filePath string) (*models.Segment, error) {
+func LoadData(filePath string) ([]*models.Segment, []*models.Passenger, []*models.SeatMap, error) {
 	data, err := os.ReadFile(filePath)
 	if err != nil {
-		return nil, err
+		return nil, nil, nil, err
 	}
 
 	var parsed struct {
 		SeatsItineraryParts []struct {
 			SegmentSeatMaps []struct {
-				Segment models.Segment `json:"segment"`
-			} `json:"segmentSeatMaps"`
-		} `json:"seatsItineraryParts"`
-	}
-
-	err = json.Unmarshal(data, &parsed)
-	if err != nil {
-		return nil, err
-	}
-
-	segment := parsed.
-		SeatsItineraryParts[0].
-		SegmentSeatMaps[0].
-		Segment
-	segment.ID = segment.Equipment + "-" + segment.Origin + "-" + segment.Destination
-
-	return &segment, nil
-}
-
-func LoadPassenger(filePath string) (*models.Passenger, error) {
-	data, err := os.ReadFile(filePath)
-	if err != nil {
-		return nil, err
-	}
-
-	var parsed struct {
-		SeatsItineraryParts []struct {
-			SegmentSeatMaps []struct {
+				Segment           models.Segment `json:"segment"`
 				PassengerSeatMaps []struct {
 					Passenger models.Passenger `json:"passenger"`
-				} `json:"passengerSeatMaps"`
-			} `json:"segmentSeatMaps"`
-		} `json:"seatsItineraryParts"`
-	}
-
-	err = json.Unmarshal(data, &parsed)
-	if err != nil {
-		return nil, err
-	}
-
-	passenger := parsed.
-		SeatsItineraryParts[0].
-		SegmentSeatMaps[0].
-		PassengerSeatMaps[0].
-		Passenger
-	passenger.ID = passenger.PassengerNumber
-
-	return &passenger, nil
-}
-
-func LoadSeatMap(filePath string) (*models.SeatMap, error) {
-	data, err := os.ReadFile(filePath)
-	if err != nil {
-		return nil, err
-	}
-
-	var parsed struct {
-		SeatsItineraryParts []struct {
-			SegmentSeatMaps []struct {
-				PassengerSeatMaps []struct {
-					SeatMap struct {
+					SeatMap   struct {
 						Aircraft string         `json:"aircraft"`
 						Cabins   []models.Cabin `json:"cabins"`
 					} `json:"seatMap"`
@@ -86,18 +29,36 @@ func LoadSeatMap(filePath string) (*models.SeatMap, error) {
 
 	err = json.Unmarshal(data, &parsed)
 	if err != nil {
-		return nil, err
+		return nil, nil, nil, err
 	}
 
-	seatMap := parsed.
-		SeatsItineraryParts[0].
-		SegmentSeatMaps[0].
-		PassengerSeatMaps[0].
-		SeatMap
+	var segments []*models.Segment
+	var passengers []*models.Passenger
+	var seatmaps []*models.SeatMap
 
-	return &models.SeatMap{
-		ID:       seatMap.Aircraft,
-		Aircraft: seatMap.Aircraft,
-		Cabins:   seatMap.Cabins,
-	}, nil
+	for _, itinerary := range parsed.SeatsItineraryParts {
+		for _, segmentMap := range itinerary.SegmentSeatMaps {
+			// Add segment
+			segment := segmentMap.Segment
+			segment.ID = segment.SegmentRef
+			segments = append(segments, &segment)
+
+			for _, psm := range segmentMap.PassengerSeatMaps {
+				// Add passenger
+				passenger := psm.Passenger
+				passenger.ID = passenger.PassengerNumber
+				passengers = append(passengers, &passenger)
+
+				// Add seatmap
+				seatMap := &models.SeatMap{
+					ID:       psm.SeatMap.Aircraft,
+					Aircraft: psm.SeatMap.Aircraft,
+					Cabins:   psm.SeatMap.Cabins,
+				}
+				seatmaps = append(seatmaps, seatMap)
+			}
+		}
+	}
+
+	return segments, passengers, seatmaps, nil
 }

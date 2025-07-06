@@ -6,5 +6,5 @@ import (
 )
 
 func RegisterPassengerRoutes(r *gin.Engine) {
-	r.GET("/api/passenger", controllers.GetPassenger)
+	r.GET("/api/passenger/:id", controllers.GetPassenger)
 }

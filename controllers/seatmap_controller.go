@@ -7,7 +7,8 @@ import (
 )
 
 func GetSeatMap(c *gin.Context) {
-	seatmap, err := services.GetSeatMap()
+	id := c.Param("id")
+	seatmap, err := services.GetSeatMap(id)
 	if err != nil {
 		c.JSON(http.StatusNotFound, gin.H{"error": "SeatMap not found"})
 		return

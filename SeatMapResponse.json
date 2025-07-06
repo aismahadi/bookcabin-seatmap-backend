@@ -9282,6 +9282,704 @@
 										],
 										"firstRow": 4,
 										"lastRow": 30
+									},
+									{
+										"deck": "RESERVE",
+										"seatColumns": [
+											"LEFT_SIDE",
+											"A",
+											"B",
+											"C",
+											"AISLE",
+											"D",
+											"E",
+											"F",
+											"RIGHT_SIDE"
+										],
+										"seatRows": [
+											{
+												"rowNumber": 31,
+												"seatCodes": [
+													"BLANK",
+													"AISLE",
+													"SEAT"
+												],
+												"seats": [
+													{
+														"slotCharacteristics": [
+															"LEFT_SIDE"
+														],
+														"storefrontSlotCode": "BLANK",
+														"available": false,
+														"entitled": false,
+														"feeWaived": false,
+														"freeOfCharge": true,
+														"originallySelected": false
+													},
+													{
+														"storefrontSlotCode": "SEAT",
+														"available": false,
+														"code": "31A",
+														"designations": [
+															"VACANT_OR_OFFERED_LAST"
+														],
+														"entitled": true,
+														"feeWaived": false,
+														"entitledRuleId": "",
+														"feeWaivedRuleId": "",
+														"seatCharacteristics": [
+															"CH",
+															"W"
+														],
+														"limitations": [],
+														"refundIndicator": "R",
+														"freeOfCharge": false,
+														"prices": {
+															"alternatives": [
+																[
+																	{
+																		"amount": 30.0,
+																		"currency": "MYR"
+																	}
+																]
+															]
+														},
+														"taxes": {
+															"alternatives": []
+														},
+														"total": {
+															"alternatives": [
+																[
+																	{
+																		"amount": 30.0,
+																		"currency": "MYR"
+																	}
+																]
+															]
+														},
+														"originallySelected": false,
+														"rawSeatCharacteristics": [
+															"W",
+															"LS",
+															"CH",
+															"72",
+															"V"
+														]
+													},
+													{
+														"storefrontSlotCode": "SEAT",
+														"available": false,
+														"code": "31B",
+														"designations": [
+															"VACANT_OR_OFFERED_LAST"
+														],
+														"entitled": true,
+														"feeWaived": false,
+														"entitledRuleId": "",
+														"feeWaivedRuleId": "",
+														"seatCharacteristics": [
+															"CH",
+															"9"
+														],
+														"limitations": [],
+														"refundIndicator": "R",
+														"freeOfCharge": false,
+														"prices": {
+															"alternatives": [
+																[
+																	{
+																		"amount": 30.0,
+																		"currency": "MYR"
+																	}
+																]
+															]
+														},
+														"taxes": {
+															"alternatives": []
+														},
+														"total": {
+															"alternatives": [
+																[
+																	{
+																		"amount": 30.0,
+																		"currency": "MYR"
+																	}
+																]
+															]
+														},
+														"originallySelected": false,
+														"rawSeatCharacteristics": [
+															"LS",
+															"CH",
+															"9",
+															"72",
+															"V"
+														]
+													},
+													{
+														"storefrontSlotCode": "SEAT",
+														"available": false,
+														"code": "31C",
+														"designations": [
+															"VACANT_OR_OFFERED_LAST"
+														],
+														"entitled": true,
+														"feeWaived": false,
+														"entitledRuleId": "",
+														"feeWaivedRuleId": "",
+														"seatCharacteristics": [
+															"A",
+															"CH"
+														],
+														"limitations": [],
+														"refundIndicator": "R",
+														"freeOfCharge": false,
+														"prices": {
+															"alternatives": [
+																[
+																	{
+																		"amount": 30.0,
+																		"currency": "MYR"
+																	}
+																]
+															]
+														},
+														"taxes": {
+															"alternatives": []
+														},
+														"total": {
+															"alternatives": [
+																[
+																	{
+																		"amount": 30.0,
+																		"currency": "MYR"
+																	}
+																]
+															]
+														},
+														"originallySelected": false,
+														"rawSeatCharacteristics": [
+															"A",
+															"LS",
+															"CH",
+															"72",
+															"V"
+														]
+													},
+													{
+														"storefrontSlotCode": "AISLE",
+														"available": false,
+														"entitled": false,
+														"feeWaived": false,
+														"freeOfCharge": true,
+														"originallySelected": false
+													},
+													{
+														"storefrontSlotCode": "SEAT",
+														"available": false,
+														"code": "31D",
+														"designations": [
+															"VACANT_OR_OFFERED_LAST"
+														],
+														"entitled": true,
+														"feeWaived": false,
+														"entitledRuleId": "",
+														"feeWaivedRuleId": "",
+														"seatCharacteristics": [
+															"A",
+															"CH"
+														],
+														"limitations": [],
+														"refundIndicator": "R",
+														"freeOfCharge": false,
+														"prices": {
+															"alternatives": [
+																[
+																	{
+																		"amount": 30.0,
+																		"currency": "MYR"
+																	}
+																]
+															]
+														},
+														"taxes": {
+															"alternatives": []
+														},
+														"total": {
+															"alternatives": [
+																[
+																	{
+																		"amount": 30.0,
+																		"currency": "MYR"
+																	}
+																]
+															]
+														},
+														"originallySelected": false,
+														"rawSeatCharacteristics": [
+															"A",
+															"RS",
+															"CH",
+															"72",
+															"V"
+														]
+													},
+													{
+														"storefrontSlotCode": "SEAT",
+														"available": false,
+														"code": "31E",
+														"designations": [
+															"VACANT_OR_OFFERED_LAST"
+														],
+														"entitled": true,
+														"feeWaived": false,
+														"entitledRuleId": "",
+														"feeWaivedRuleId": "",
+														"seatCharacteristics": [
+															"CH",
+															"9"
+														],
+														"limitations": [],
+														"refundIndicator": "R",
+														"freeOfCharge": false,
+														"prices": {
+															"alternatives": [
+																[
+																	{
+																		"amount": 30.0,
+																		"currency": "MYR"
+																	}
+																]
+															]
+														},
+														"taxes": {
+															"alternatives": []
+														},
+														"total": {
+															"alternatives": [
+																[
+																	{
+																		"amount": 30.0,
+																		"currency": "MYR"
+																	}
+																]
+															]
+														},
+														"originallySelected": false,
+														"rawSeatCharacteristics": [
+															"RS",
+															"CH",
+															"9",
+															"72",
+															"V"
+														]
+													},
+													{
+														"storefrontSlotCode": "SEAT",
+														"available": false,
+														"code": "31F",
+														"designations": [
+															"VACANT_OR_OFFERED_LAST"
+														],
+														"entitled": true,
+														"feeWaived": false,
+														"entitledRuleId": "",
+														"feeWaivedRuleId": "",
+														"seatCharacteristics": [
+															"CH",
+															"W"
+														],
+														"limitations": [],
+														"refundIndicator": "R",
+														"freeOfCharge": false,
+														"prices": {
+															"alternatives": [
+																[
+																	{
+																		"amount": 30.0,
+																		"currency": "MYR"
+																	}
+																]
+															]
+														},
+														"taxes": {
+															"alternatives": []
+														},
+														"total": {
+															"alternatives": [
+																[
+																	{
+																		"amount": 30.0,
+																		"currency": "MYR"
+																	}
+																]
+															]
+														},
+														"originallySelected": false,
+														"rawSeatCharacteristics": [
+															"W",
+															"RS",
+															"CH",
+															"72",
+															"V"
+														]
+													},
+													{
+														"slotCharacteristics": [
+															"RIGHT_SIDE"
+														],
+														"storefrontSlotCode": "BLANK",
+														"available": false,
+														"entitled": false,
+														"feeWaived": false,
+														"freeOfCharge": true,
+														"originallySelected": false
+													}
+												]
+											},
+											{
+												"rowNumber": 32,
+												"seatCodes": [
+													"BLANK",
+													"AISLE",
+													"SEAT"
+												],
+												"seats": [
+													{
+														"slotCharacteristics": [
+															"LEFT_SIDE"
+														],
+														"storefrontSlotCode": "BLANK",
+														"available": false,
+														"entitled": false,
+														"feeWaived": false,
+														"freeOfCharge": true,
+														"originallySelected": false
+													},
+													{
+														"storefrontSlotCode": "SEAT",
+														"available": false,
+														"code": "32A",
+														"designations": [
+															"VACANT_OR_OFFERED_LAST"
+														],
+														"entitled": true,
+														"feeWaived": false,
+														"entitledRuleId": "",
+														"feeWaivedRuleId": "",
+														"seatCharacteristics": [
+															"CH",
+															"W"
+														],
+														"limitations": [],
+														"refundIndicator": "R",
+														"freeOfCharge": false,
+														"prices": {
+															"alternatives": [
+																[
+																	{
+																		"amount": 30.0,
+																		"currency": "MYR"
+																	}
+																]
+															]
+														},
+														"taxes": {
+															"alternatives": []
+														},
+														"total": {
+															"alternatives": [
+																[
+																	{
+																		"amount": 30.0,
+																		"currency": "MYR"
+																	}
+																]
+															]
+														},
+														"originallySelected": false,
+														"rawSeatCharacteristics": [
+															"W",
+															"LS",
+															"CH",
+															"72",
+															"V"
+														]
+													},
+													{
+														"storefrontSlotCode": "SEAT",
+														"available": false,
+														"code": "32B",
+														"designations": [
+															"VACANT_OR_OFFERED_LAST"
+														],
+														"entitled": true,
+														"feeWaived": false,
+														"entitledRuleId": "",
+														"feeWaivedRuleId": "",
+														"seatCharacteristics": [
+															"CH",
+															"9"
+														],
+														"limitations": [],
+														"refundIndicator": "R",
+														"freeOfCharge": false,
+														"prices": {
+															"alternatives": [
+																[
+																	{
+																		"amount": 30.0,
+																		"currency": "MYR"
+																	}
+																]
+															]
+														},
+														"taxes": {
+															"alternatives": []
+														},
+														"total": {
+															"alternatives": [
+																[
+																	{
+																		"amount": 30.0,
+																		"currency": "MYR"
+																	}
+																]
+															]
+														},
+														"originallySelected": false,
+														"rawSeatCharacteristics": [
+															"LS",
+															"CH",
+															"9",
+															"72",
+															"V"
+														]
+													},
+													{
+														"storefrontSlotCode": "SEAT",
+														"available": false,
+														"code": "32C",
+														"designations": [
+															"VACANT_OR_OFFERED_LAST"
+														],
+														"entitled": true,
+														"feeWaived": false,
+														"entitledRuleId": "",
+														"feeWaivedRuleId": "",
+														"seatCharacteristics": [
+															"A",
+															"CH"
+														],
+														"limitations": [],
+														"refundIndicator": "R",
+														"freeOfCharge": false,
+														"prices": {
+															"alternatives": [
+																[
+																	{
+																		"amount": 30.0,
+																		"currency": "MYR"
+																	}
+																]
+															]
+														},
+														"taxes": {
+															"alternatives": []
+														},
+														"total": {
+															"alternatives": [
+																[
+																	{
+																		"amount": 30.0,
+																		"currency": "MYR"
+																	}
+																]
+															]
+														},
+														"originallySelected": false,
+														"rawSeatCharacteristics": [
+															"A",
+															"LS",
+															"CH",
+															"72",
+															"V"
+														]
+													},
+													{
+														"storefrontSlotCode": "AISLE",
+														"available": false,
+														"entitled": false,
+														"feeWaived": false,
+														"freeOfCharge": true,
+														"originallySelected": false
+													},
+													{
+														"storefrontSlotCode": "SEAT",
+														"available": false,
+														"code": "32D",
+														"designations": [
+															"VACANT_OR_OFFERED_LAST"
+														],
+														"entitled": true,
+														"feeWaived": false,
+														"entitledRuleId": "",
+														"feeWaivedRuleId": "",
+														"seatCharacteristics": [
+															"A",
+															"CH"
+														],
+														"limitations": [],
+														"refundIndicator": "R",
+														"freeOfCharge": false,
+														"prices": {
+															"alternatives": [
+																[
+																	{
+																		"amount": 30.0,
+																		"currency": "MYR"
+																	}
+																]
+															]
+														},
+														"taxes": {
+															"alternatives": []
+														},
+														"total": {
+															"alternatives": [
+																[
+																	{
+																		"amount": 30.0,
+																		"currency": "MYR"
+																	}
+																]
+															]
+														},
+														"originallySelected": false,
+														"rawSeatCharacteristics": [
+															"A",
+															"RS",
+															"CH",
+															"72",
+															"V"
+														]
+													},
+													{
+														"storefrontSlotCode": "SEAT",
+														"available": false,
+														"code": "32E",
+														"designations": [
+															"VACANT_OR_OFFERED_LAST"
+														],
+														"entitled": true,
+														"feeWaived": false,
+														"entitledRuleId": "",
+														"feeWaivedRuleId": "",
+														"seatCharacteristics": [
+															"CH",
+															"9"
+														],
+														"limitations": [],
+														"refundIndicator": "R",
+														"freeOfCharge": false,
+														"prices": {
+															"alternatives": [
+																[
+																	{
+																		"amount": 30.0,
+																		"currency": "MYR"
+																	}
+																]
+															]
+														},
+														"taxes": {
+															"alternatives": []
+														},
+														"total": {
+															"alternatives": [
+																[
+																	{
+																		"amount": 30.0,
+																		"currency": "MYR"
+																	}
+																]
+															]
+														},
+														"originallySelected": false,
+														"rawSeatCharacteristics": [
+															"RS",
+															"CH",
+															"9",
+															"72",
+															"V"
+														]
+													},
+													{
+														"storefrontSlotCode": "SEAT",
+														"available": false,
+														"code": "32F",
+														"designations": [
+															"VACANT_OR_OFFERED_LAST"
+														],
+														"entitled": true,
+														"feeWaived": false,
+														"entitledRuleId": "",
+														"feeWaivedRuleId": "",
+														"seatCharacteristics": [
+															"CH",
+															"W"
+														],
+														"limitations": [],
+														"refundIndicator": "R",
+														"freeOfCharge": false,
+														"prices": {
+															"alternatives": [
+																[
+																	{
+																		"amount": 30.0,
+																		"currency": "MYR"
+																	}
+																]
+															]
+														},
+														"taxes": {
+															"alternatives": []
+														},
+														"total": {
+															"alternatives": [
+																[
+																	{
+																		"amount": 30.0,
+																		"currency": "MYR"
+																	}
+																]
+															]
+														},
+														"originallySelected": false,
+														"rawSeatCharacteristics": [
+															"W",
+															"RS",
+															"CH",
+															"72",
+															"V"
+														]
+													},
+													{
+														"slotCharacteristics": [
+															"RIGHT_SIDE"
+														],
+														"storefrontSlotCode": "BLANK",
+														"available": false,
+														"entitled": false,
+														"feeWaived": false,
+														"freeOfCharge": true,
+														"originallySelected": false
+													}
+												]
+											}
+										],
+										"firstRow": 31,
+										"lastRow": 32
 									}
 								]
 							},

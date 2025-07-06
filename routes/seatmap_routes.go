@@ -6,5 +6,5 @@ import (
 )
 
 func RegisterSeatMapRoutes(r *gin.Engine) {
-	r.GET("/api/seatmap", controllers.GetSeatMap)
+	r.GET("/api/seatmap/:id", controllers.GetSeatMap)
 }

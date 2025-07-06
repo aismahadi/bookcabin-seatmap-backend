@@ -40,7 +40,7 @@ func ConnectMongo() {
 
 	db := client.Database(dbName)
 
-	// 🔍 List current collections
+	// List current collections
 	collections, err := db.ListCollectionNames(ctx, bson.M{})
 	if err != nil {
 		log.Fatal("Failed to list collections:", err)

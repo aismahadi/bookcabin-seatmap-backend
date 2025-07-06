@@ -7,10 +7,10 @@ import (
 	"go.mongodb.org/mongo-driver/bson"
 )
 
-func GetPassenger() (*models.Passenger, error) {
+func GetPassenger(id string) (*models.Passenger, error) {
 	var passenger models.Passenger
 
-	err := config.PassengerCollection.FindOne(context.TODO(), bson.M{}).Decode(&passenger)
+	err := config.PassengerCollection.FindOne(context.TODO(), bson.M{"_id": id}).Decode(&passenger)
 	if err != nil {
 		return nil, err
 	}

@@ -15,12 +15,12 @@ type Cabin struct {
 
 type Row struct {
 	RowNumber int      `json:"rowNumber" bson:"rowNumber"`
-	SeatCodes []string `json:"seatCodes" bson:"seatCodes"` // Optional if needed
+	SeatCodes []string `json:"seatCodes" bson:"seatCodes"`
 	Seats     []Seat   `json:"seats" bson:"seats"`
 }
 
 type Seat struct {
-	Code           string `json:"code" bson:"code"` // e.g. "12A"
+	Code           string `json:"code" bson:"code"`
 	Available      bool   `json:"available" bson:"available"`
 	FreeOfCharge   bool   `json:"freeOfCharge" bson:"freeOfCharge"`
 	StorefrontCode string `json:"storefrontSlotCode" bson:"storefrontSlotCode"`

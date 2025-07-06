@@ -9,8 +9,8 @@ type Segment struct {
 	Flight                      FlightDetails           `bson:"flight" json:"flight"`
 	Origin                      string                  `bson:"origin" json:"origin"`
 	Destination                 string                  `bson:"destination" json:"destination"`
-	Departure                   string                  `bson:"departure" json:"departure"` // ISO 8601
-	Arrival                     string                  `bson:"arrival" json:"arrival"`     // ISO 8601
+	Departure                   string                  `bson:"departure" json:"departure"`
+	Arrival                     string                  `bson:"arrival" json:"arrival"`
 	BookingClass                string                  `bson:"bookingClass" json:"bookingClass"`
 	LayoverDuration             int                     `bson:"layoverDuration" json:"layoverDuration"`
 	FareBasis                   string                  `bson:"fareBasis" json:"fareBasis"`

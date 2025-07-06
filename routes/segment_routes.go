@@ -6,5 +6,5 @@ import (
 )
 
 func RegisterSegmentRoutes(r *gin.Engine) {
-	r.GET("/api/segment", controllers.GetSegment)
+	r.GET("/api/segment/:equipment", controllers.GetSegment)
 }

@@ -5,51 +5,73 @@ import (
 	"bookcabin-seatmap-backend/routes"
 	"bookcabin-seatmap-backend/utils"
 	"context"
+	"log"
+
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
-	"log"
+	"go.mongodb.org/mongo-driver/bson"
 )
 
 func main() {
 	config.ConnectMongo()
 
-	segment, err := utils.LoadSegment("SeatMapResponse.json")
+	// Load all data
+	segments, passengers, seatMaps, err := utils.LoadData("SeatMapResponse.json")
 	if err != nil {
-		log.Fatal(err)
+		log.Fatal("Failed to load data:", err)
 	}
-	config.SegmentCollection.DeleteMany(context.TODO(), map[string]interface{}{})
-	_, err = config.SegmentCollection.InsertOne(context.TODO(), segment)
-	if err != nil {
-		log.Fatal(err)
-	}
-	log.Println("Segment seeded into MongoDB")
 
-	passanger, err := utils.LoadPassenger("SeatMapResponse.json")
-	if err != nil {
-		log.Fatal(err)
-	}
-	config.PassengerCollection.DeleteMany(context.TODO(), map[string]interface{}{})
-	_, err = config.PassengerCollection.InsertOne(context.TODO(), passanger)
-	if err != nil {
-		log.Fatal(err)
-	}
-	log.Println("Passanger seeded into MongoDB")
+	// Clear collections before insert
+	config.SegmentCollection.DeleteMany(context.TODO(), bson.M{})
+	config.PassengerCollection.DeleteMany(context.TODO(), bson.M{})
+	config.SeatMapCollection.DeleteMany(context.TODO(), bson.M{})
 
-	aircraft, err := utils.LoadSeatMap("SeatMapResponse.json")
-	if err != nil {
-		log.Fatal(err)
+	// Insert segments
+	segmentDocs := make([]interface{}, len(segments))
+	for i, s := range segments {
+		segmentDocs[i] = s
 	}
-	config.SeatMapCollection.DeleteMany(context.TODO(), map[string]interface{}{})
-	_, err = config.SeatMapCollection.InsertOne(context.TODO(), aircraft)
-	if err != nil {
-		log.Fatal(err)
+	if len(segmentDocs) > 0 {
+		_, err = config.SegmentCollection.InsertMany(context.TODO(), segmentDocs)
+		if err != nil {
+			log.Fatal("Failed to insert segments:", err)
+		}
+		log.Println("Segments seeded into MongoDB")
 	}
-	log.Println("SeatMap seeded into MongoDB")
 
+	// Insert passengers
+	passengerDocs := make([]interface{}, len(passengers))
+	for i, p := range passengers {
+		passengerDocs[i] = p
+	}
+	if len(passengerDocs) > 0 {
+		_, err = config.PassengerCollection.InsertMany(context.TODO(), passengerDocs)
+		if err != nil {
+			log.Fatal("Failed to insert passengers:", err)
+		}
+		log.Println("Passengers seeded into MongoDB")
+	}
+
+	// Insert seat maps
+	seatMapDocs := make([]interface{}, len(seatMaps))
+	for i, sm := range seatMaps {
+		seatMapDocs[i] = sm
+	}
+	if len(seatMapDocs) > 0 {
+		_, err = config.SeatMapCollection.InsertMany(context.TODO(), seatMapDocs)
+		if err != nil {
+			log.Fatal("Failed to insert seatmaps:", err)
+		}
+		log.Println("Seat maps seeded into MongoDB")
+	}
+
+	// Start server
 	r := gin.Default()
 	r.Use(cors.Default())
+
 	routes.RegisterSegmentRoutes(r)
 	routes.RegisterSeatMapRoutes(r)
 	routes.RegisterPassengerRoutes(r)
+
 	r.Run(":8080")
 }

@@ -18,7 +18,7 @@ type PassengerDetails struct {
 type PassengerInfo struct {
 	DateOfBirth string   `bson:"dateOfBirth" json:"dateOfBirth"`
 	Gender      string   `bson:"gender" json:"gender"`
-	Type        string   `bson:"type" json:"type"` // ADT, CHD, INF
+	Type        string   `bson:"type" json:"type"`
 	Emails      []string `bson:"emails" json:"emails"`
 	Phones      []string `bson:"phones" json:"phones"`
 	Address     Address  `bson:"address" json:"address"`

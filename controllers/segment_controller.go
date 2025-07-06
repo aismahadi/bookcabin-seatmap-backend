@@ -7,7 +7,8 @@ import (
 )
 
 func GetSegment(c *gin.Context) {
-	segment, err := services.GetSegment()
+	equipment := c.Param("equipment")
+	segment, err := services.GetSegment(equipment)
 	if err != nil {
 		c.JSON(http.StatusNotFound, gin.H{"error": "Segment not found"})
 		return
